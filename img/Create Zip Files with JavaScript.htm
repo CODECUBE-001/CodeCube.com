@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html dir="ltr" class=" fonts-loaded" slick-uniqueid="4" lang="en"><head><script type="text/javascript" charset="utf-8" async="" src="Create%20Zip%20Files%20with%20JavaScript_files/bsa.js"></script><script type="text/javascript" charset="utf-8" async="" src="Create%20Zip%20Files%20with%20JavaScript_files/prism.js"></script><script type="text/javascript" charset="utf-8" async="" src="Create%20Zip%20Files%20with%20JavaScript_files/MooTools-Core-1.js"></script><script type="text/javascript" charset="utf-8" async="" src="Create%20Zip%20Files%20with%20JavaScript_files/main.js"></script><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="monetization" content="$ilp.uphold.com/gaE8U7Wm7Uhh">
+<meta name="flattr:id" content="j7x6q5">
+<meta name="viewport" content="initial-scale=1.0 maximum-scale=1.0"><title>Create Zip Files with JavaScript</title><!-- stylesheets --><style type="text/css" id="main-styles">*,.offscreen{padding:0;border:0}.new-main-nav,.new-main-popular strong{text-transform:uppercase}.clear:after,.clear:before,.main-nav-right>li:after,.main-nav-right>li:before,.post-list li:after,.post-list li:before{content:' ';display:table}.clear:after,.main-nav-right>li:after,.post-list li:after{clear:both}.hidden{display:none}.offscreen{clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;position:absolute;width:1px}.center,.relative{position:relative}body{font-family:Georgia,Cambria,"Times New Roman",Times,serif;font-size:22px;line-height:1.5;letter-spacing:.01rem;font-weight:400;color:rgba(0,0,0,.8);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.a11y-menu a:focus,.header-title .logo{color:#fff;text-decoration:none;font-weight:700}.fonts-loaded body{font-family:"freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif}@media (max-width:768px){body{font-size:18px}}#main-nav,#masthead-title #masthead-title-text,.header-search input,.header-title .logo,.main-nav-left li a,.main-nav-right .heading,h1,h2,h3,h4,h5{font-family:Geneva,Verdana,sans-serif}.fonts-loaded #main-nav,.fonts-loaded #masthead-title #masthead-title-text,.fonts-loaded .header-search input,.fonts-loaded .header-title .logo,.fonts-loaded .main-nav-left li a,.fonts-loaded .main-nav-right .heading,.fonts-loaded h1,.fonts-loaded h2,.fonts-loaded h3,.fonts-loaded h4,.fonts-loaded h5{font-family:"jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif}#masthead-title #masthead-title-text,h1,h2,h3,h4,h5{font-weight:700}#masthead-title #masthead-title-text,h1{font-size:48px;letter-spacing:-.04em;line-height:1.1}h2{font-size:32px;letter-spacing:-.04em;line-height:1.1}@media (max-width:480px){h2{font-size:24px}}article ol>:last-child,article ul>:last-child,article>:last-child{margin-bottom:0}.loading #masthead-title,.loading main{opacity:.3;pointer-events:none;cursor:default}.sidebar h3 i{-webkit-transform:rotate(0);transform:rotate(0);-webkit-transition:-webkit-transform .5s;transition:transform .5s}.sidebar h3:hover i{-webkit-transform:rotate(360deg);transform:rotate(360deg)}*{margin:0}html{background:#fff}.center{max-width:1300px;margin:0 auto;padding:0 20px}header{background:#231f20;padding:10px 0}.a11y-menu{position:absolute;top:-500px;left:block-margin;z-index:3}.a11y-menu a:focus{display:block;position:absolute;top:540px;background:#07a;padding:block-margin;width:220px;font-size:30px;text-align:center}.header-title .logo{display:inline-block;position:relative;font-size:80px;letter-spacing:-3px;margin-top:-8px}#logo-icon,#main-nav,.main-nav-left{position:absolute}.header-title .logo img{display:inline-block;vertical-align:middle;max-height:90px}@media (max-width:900px){.header-title .logo{font-size:50px}.header-title .logo img{max-height:70px}}.header-title .logo span{vertical-align:middle}.header-title .logo:active,.header-title .logo:focus,.header-title .logo:hover{color:rgba(255,255,255,.9)}#logo-icon{font-size:24px;right:-30px;top:40%}#main-nav{background:#fff;margin-top:10px;width:50%;max-width:100%;z-index:2;display:none;box-shadow:0 0 6px 0 #000;font-size:16px}#main-nav.active{display:block}#main-nav .fa-caret-up{font-size:40px;position:absolute;left:30px;top:-26px;color:#f0f0f0}.main-nav-left{width:30%;padding:10px 0;background:#f0f0f0;top:0;bottom:0;left:0}.main-nav-left .active,.main-nav-right{background:#fff}.main-nav-left li{margin:6px 0}.main-nav-left li a{display:block;padding:4px 20px;color:rgba(0,0,0,.8);text-decoration:none;font-weight:700}.main-nav-right{float:left;margin-left:30%;padding-bottom:10px;min-height:260px}@media (max-width:768px){.main-nav-left{position:static;width:auto}.main-nav-right{display:none}}.main-nav-right .active{display:block}.main-nav-right>li{padding:12px 20px;display:none}.main-nav-right .heading{font-size:28px;font-weight:700;margin-bottom:10px}.main-nav-right a{text-decoration:none}.main-nav-right a:active,.main-nav-right a:focus,.main-nav-right a:hover{text-decoration:underline}.main-nav-right ul li a{font-size:95%}.main-nav-right .bold{font-weight:700;font-size:120%}.nav-posts.half{width:200px;float:left}.nav-posts a{display:block;padding:4px 0}.header-middle{position:absolute;top:20px;left:35%}@media (max-width:1200px){.header-middle{left:40%}}@media (max-width:900px){.header-middle{left:33%;top:6px}}@media (max-width:800px){.header-middle{left:45%;top:24px}}.header-middle .social-icons{margin-bottom:20px}@media (max-width:800px){.header-middle .social-icons li{margin-right:0}.header-middle .social-icons a{display:none}}.social-icons{font-size:13px}.social-icons li{display:inline-block;margin-right:10px}.social-icons a{padding:6px;border-radius:50%;color:#fff;width:12px;height:12px;display:inline-block;opacity:.7;transition:opacity .3s,transform .3s}.social-icons a:active,.social-icons a:focus,.social-icons a:hover{opacity:1;transform:scale(1.2)}@media (max-width:1024px){.social-icons li{margin-right:18px}.social-icons a{opacity:1}}.social-icons i{vertical-align:text-top;width:12px;text-align:center}.social-icons span{color:#000;font-weight:700;vertical-align:top;padding-left:4px;font-size:16px}.social-icons .bitcoin,.social-icons .rss{background:#f67f00}.social-icons .bitcoin i{margin-top:-1px}.social-icons .twitter{background:#7ac9ed}.social-icons .facebook{background:#3b5998}.social-icons .google-plus{background:#d74d2f}.social-icons .discuss,.social-icons .github{background:#91c661}.social-icons .reddit{background:#a181a7}.social-icons .reddit i{font-weight:700;margin-left:-1px}.social-icons .discuss i{margin-top:-2px}.social-icons .linkedin{background:#0c7bb6}.social-icons .top{background:#000;display:none}.fixed .social-icons .top{display:inherit}.social-icons a.search{background:#f8da75;color:rgba(0,0,0,.8);display:none}@media (max-width:480px){.social-icons a.search{display:inline-block}}.social-icons a.search.show{display:block}.header-search{font-size:16px}@media (max-width:800px){.social-icons a.search{display:block}.header-search{display:none}}.header-search i{color:#fff;margin-right:10px}.header-search input{width:80%;background:0 0;padding:3px 6px;color:#fff;font-size:14px;border-bottom:1px solid #666;-webkit-appearance:none}.header-sda{position:absolute;top:10px;right:20px;max-width:450px}@media (max-width:1200px){.header-sda{max-width:375px}}@media (max-width:900px){.header-middle .social-icons{margin-bottom:10px}.header-sda{top:-10px}}@media (max-width:1024px){.header-sda{max-width:275px}}@media (max-width:600px){.header-middle{left:auto;right:20px}.header-sda{position:static;max-width:none}}.header-sda a{display:block;-webkit-transform:scale(1);transform:scale(1);-webkit-transition:-webkit-transform .5s;transition:transform .5s}.header-sda a:hover{-webkit-transform:scale(1.1);transform:scale(1.1)}.header-sda img{margin-top:-4px}.header-sda.fx1{-webkit-transition:opacity 1s;transition:opacity 1s;opacity:0}.header-sda.fx1.complete{opacity:1}.header-sda.fx2{transition:-webkit-filter 1s;-webkit-filter:blur(7px)}.header-sda.fx2.complete{-webkit-filter:blur(0)}.header-sda.fx3{transition:all 1s;-webkit-transform:scale(.1);transform:scale(.1);opacity:0}.header-sda.fx3.complete{-webkit-transform:scale(1);transform:scale(1);opacity:1}.header-sda.fx4 img{transition:all 1s;-webkit-transition:all 1s;transform:rotateX(0)}.header-sda.fx4.complete img{-webkit-transform:rotateX(1080deg);transform:rotateX(1080deg)}.header-sda.fx5 img{-webkit-transform-origin:50% 50%;-webkit-animation:shake 1s infinite linear;transform-origin:50% 50%;animation:shake 1s infinite linear}.header-sda.fx5.complete img{-webkit-animation:none;animation:none}.header-sda.fx6 img{-webkit-transform-origin:50% 50%;-webkit-animation:thump 1s infinite linear;transform-origin:50% 50%;animation:thump 1s infinite linear}.header-sda.fx6.complete img{-webkit-animation:none;animation:none}#masthead-title{background:#7ac9ed;padding:20px}#masthead-title #masthead-title-text{color:#fff;text-align:center}.fixed #masthead-title #masthead-title-text{font-size:24px;text-align:left}.fixed #masthead-title{position:fixed;top:0;left:0;right:0;opacity:.9;z-index:3;padding:10px}#masthead-title .social-icons{float:right}@media (max-width:768px){#masthead-title #masthead-title-text{font-size:24px}.fixed #masthead-title #masthead-title-text{display:none}#masthead-title .social-icons{float:none;text-align:center}#masthead-title .social-icons span{display:none}}#masthead-title .social-icons .twitter{background:#fff;color:#7ac9ed}.new-main-nav{font-size:20px;font-weight:700;display:inline-block;margin-left:60px;font-family:Arial}.new-main-nav li{line-height:1;display:inline-block;padding:1px 2px;margin:0 20px 0 0}.new-main-popular strong,.new-main-popular ul li{margin-right:20px;display:inline-block}.new-main-nav li a{display:inline-block;color:#7ac9ed;text-decoration:none}@media (max-width:1024px){.new-main-nav .new-main-nav-blog,.new-main-nav .new-main-nav-topics{display:none}}@media (max-width:800px){.new-main-nav,.new-main-popular{display:none}}.new-main-popular{background:#eee;padding:8px 0;font-family:Arial;font-size:18px}.new-main-popular ul{display:inline-block}.new-main-popular ul a{color:#666;text-decoration:none;border-bottom:1px solid #fff}a,h2 a:active,h2 a:focus,h2 a:hover,h3 a:active,h3 a:focus,h3 a:hover{color:#07a}h2 a,h3 a{color:rgba(0,0,0,.8);text-decoration:none;display:block}h3{line-height:1.1}ol,ul{list-style-type:none}iframe,img{max-width:100%;display:block;-ms-interpolation-mode:bicubic}.main{margin:40px 0}@media (max-width:768px){.main{margin:20px 0}}main{max-width:65%;width:65%;float:left;margin-right:40px;overflow-x:hidden}@media (max-width:768px){main{max-width:none;width:auto;float:none;margin-right:0}}.sidebar{width:calc(35% - 40px);float:left;opacity:0;font-size:16px;margin-top:-20px}@media (max-width:768px){.sidebar{margin:20px auto 10px;float:none;width:auto;max-width:425px}}.sidebar h3{padding:8px 12px;background:#d74d2f;color:#fff;margin-bottom:8px}.sidebar h3 a{color:#fff!important}.sidebar>div{margin:0 0 40px}.big-show h2{font-size:48px}.post-list li{margin-bottom:40px;cursor:pointer;position:relative;color:rgba(0,0,0,.6)}.post-list li:hover{color:rgba(0,0,0,.8)}.post-list li:hover h2 a,.post-list li:hover h3 a{color:#07a}.post-list .meta{display:none}.post-list .post-image{width:20%;float:left;margin-top:10px;border-radius:4px;opacity:1;-webkit-transition:opacity 1s;transition:opacity 1s}.post-list .post-image[data-src]{opacity:0}.post-list .preview{float:left;width:77%;margin-left:3%}@media (max-width:768px){.big-show h2{font-size:28px}.post-list .post-image{display:none}.post-list .preview{float:none;width:auto;margin-left:0}}.fixed .sidebar,.fixed article{padding-top:90px}article .ad,article .gb-intro,article .update,article blockquote,article iframe,article ol,article p,article pre,article pre[class*=language-],article table,article ul{margin:0 0 30px}article img,article video{margin:0 auto}article img.image{float:right;margin:0 0 20px 20px;max-width:250px}@media (max-width:768px){article img.image{float:none;margin:0 auto}}article ol,article ul{padding-left:40px}article ul{list-style-type:disc}article ol{list-style-type:decimal}article pre[class*=language-]{border-bottom:1px solid #eee;border-top:1px solid #eee;padding:20px 0!important}.actions{margin-bottom:20px}.meta{margin:0 0 10px;font-style:italic;font-size:18px}.meta,.meta a{color:#8e8e8e}.meta .social-icons{display:inline-block;margin:0}@media (max-width:768px){.meta{text-align:center}.meta .social-icons{margin-top:10px}}@media (max-width:480px){.meta .social-icons{display:block;padding-left:0}}.meta .social-icons a{color:#fff}
+/*# sourceMappingURL=maps/above-fold.css.map */.clear:after,.x-long{clear:both}.demo-intro,.gb-intro,.update{font-style:italic}.pagination,.sidebar-event{text-align:center}.clear:after,.clear:before{content:' ';display:table}.hidden{display:none}.offscreen{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}#comment-form input[type=submit],#launch-editor,.actions a,.comment-user,.demo-toolbar .intro,.green-button,.home-features h2,.pagination a,.post-list-topics h2,.sidebar-lists,.sidebar-topics{font-family:Geneva,Verdana,sans-serif}.fonts-loaded #comment-form input[type=submit],.fonts-loaded #launch-editor,.fonts-loaded .actions a,.fonts-loaded .comment-user,.fonts-loaded .demo-toolbar .intro,.fonts-loaded .green-button,.fonts-loaded .home-features h2,.fonts-loaded .pagination a,.fonts-loaded .post-list-topics h2,.fonts-loaded .sidebar-lists,.fonts-loaded .sidebar-topics{font-family:"jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif}.home-features h2,.post-list-topics h2{font-weight:700;font-size:48px;letter-spacing:-.04em;line-height:1.1}.home-features h3{font-size:32px;letter-spacing:-.04em;line-height:1.1}@media (max-width:480px){.home-features h3{font-size:24px}}.post-list-topics h2 a,.post-more h2 a,.sidebar-link-header h3 a{display:block;position:relative}.post-list-topics h2 a:active,.post-list-topics h2 a:focus,.post-list-topics h2 a:hover,.post-more h2 a:active,.post-more h2 a:focus,.post-more h2 a:hover,.sidebar-link-header h3 a:active,.sidebar-link-header h3 a:focus,.sidebar-link-header h3 a:hover{color:#fff}.post-list-topics h2 i,.post-more h2 i,.sidebar-link-header h3 i{position:absolute;right:0;top:3px}#comment-form input[type=submit],.actions a,.button,.green-button,.pagination a,button,input[type=submit]{background:#f9f9f9;display:inline-block;padding:6px 14px;border:1px solid #eee;margin:0 10px 10px 0;text-decoration:none;cursor:pointer;color:#07a}#comment-form input[type=submit] i,.actions a i,.button i,.green-button i,.pagination a i,button i,input[type=submit] i{margin:0 0 0 10px}#comment-form input[type=submit]:hover,.actions a:hover,.button:hover,.green-button:hover,.pagination a:hover,button:hover,input[type=submit]:hover{border-color:#ddd}#launch-editor{text-decoration:none}#launch-editor:active,#launch-editor:focus,#launch-editor:hover{text-decoration:underline}.comment-user a,.demo-toolbar .intro a,.gb-links a,.sidebar-event a,.sidebar-lists li a,.sidebar-topics li a,a.wufoo{text-decoration:none}#gb-bio,.gb-intro,.update{padding:14px 12px}#gb-bio>:last-child,.comment-content>:last-child,.comment-content>:not(pre)>:last-child,.comments>:last-child,.gb-intro>:last-child,.update>:last-child,aside>:last-child,blockquote>:last-child{margin-bottom:0}#comment-form input[type=submit] i,.actions a i,.green-button i,.pagination a i,.post-list-topics h2 i,.post-more h2 i{-webkit-transform:rotate(0);transform:rotate(0);-webkit-transition:-webkit-transform .5s;transition:transform .5s}#comment-form input[type=submit]:hover i,.actions a:hover i,.green-button:hover i,.pagination a:hover i,.post-list-topics h2:hover i,.post-more h2:hover i{-webkit-transform:rotate(360deg);transform:rotate(360deg)}.comments pre[class*=language-] code,pre,pre[class*=language-]{font-size:16px}@media (max-width:768px){.comments pre[class*=language-] code,pre,pre[class*=language-]{font-size:14px}}.small-list{font-size:18px}.small-list img.post-image{width:15%}::selection{background:rgba(231,105,105,.7)}::-moz-selection{background:rgba(231,105,105,.7)}@-webkit-keyframes shake{0%{-webkit-transform:translate(2px,1px) rotate(0)}10%{-webkit-transform:translate(-1px,-2px) rotate(-1deg)}20%{-webkit-transform:translate(-3px,0) rotate(1deg)}30%{-webkit-transform:translate(0,2px) rotate(0)}40%{-webkit-transform:translate(1px,-1px) rotate(1deg)}50%{-webkit-transform:translate(-1px,1px) rotate(-1deg)}60%{-webkit-transform:translate(-3px,-2px) rotate(0)}70%{-webkit-transform:translate(2px,1px) rotate(-1deg)}80%{-webkit-transform:translate(-1px,-2px) rotate(1deg)}90%{-webkit-transform:translate(2px,-1px) rotate(0)}100%{-webkit-transform:translate(1px,-2px) rotate(-1deg)}}@-webkit-keyframes thump{0%,100%{-webkit-transform:scale(1)}50%{-webkit-transform:scale(.9)}}.device-state{z-index:1}@media (max-width:1024px){.device-state{z-index:2}}@media (max-width:768px){.device-state{z-index:3}}@media (max-width:480px){.device-state{z-index:4}}kbd{background-color:#f4f7f8;border-radius:3px;border:1px solid #b4b4b4;box-shadow:0 1px 1px rgba(0,0,0,.2),0 2px 0 0 rgba(255,255,255,.7) inset;display:inline-block;padding:2px 4px;white-space:nowrap;line-height:1;font-size:80%}#sidebar-oreilly iframe{width:100%;max-width:100%}.sidebar-link-header h3{margin-bottom:0;position:relative}.sidebar-lists h3{background:#69c773}.sidebar-lists li{border-bottom:1px solid #eee;position:relative}.sidebar-lists li a{display:block;padding:10px 20px}.sidebar-lists li a:active,.sidebar-lists li a:focus,.sidebar-lists li a:hover{background:rgba(105,199,115,.1)}.sidebar-sda img{max-width:48%;width:calc(50% - 10px);height:auto;margin-right:10px;display:inline}.sidebar-sda img:nth-child(even){margin-right:0}.sidebar-sda a,.sidebar-sda iframe{display:inline!important;width:auto!important;max-width:180px}.sidebar-sda a.adhere,.sidebar-sda iframe.adhere{display:none!important}.sidebar-sda-large{max-width:300px;margin:0 auto 40px!important}.sidebar-sda-large a{margin-bottom:10px!important}.sidebar-sda-small{max-width:468px;margin:0 auto}.sidebar-sda-small a{margin-bottom:10px!important;width:auto!important;max-width:100%}.sidebar-topics{font-size:14px}.sidebar-topics ul{margin-top:10px}.sidebar-topics li{display:inline-block;margin:0 6px 6px 0}.sidebar-topics li a{display:block;padding:2px 6px;color:rgba(0,0,0,.8);background:#fff5bb}.sidebar-facebook iframe{overflow:hidden;height:62px;width:190px;display:block;margin:0 auto;border:0}#ace-box,div[data-fiddle] iframe{width:100%}footer{background:#333;padding:20px 0;color:#fff;font-size:18px}footer a{color:rgba(255,255,255,.8)}footer .social{float:right}@media (max-width:768px){footer{text-align:center}footer .social{float:none;margin-top:0;margin-bottom:20px}}footer span{margin-right:8px;display:inline-block}.home-terciary{margin-bottom:40px}.clickable{cursor:pointer}body.demo{overflow:hidden;height:10px}body.demo .demo-box{display:block}.demo-box{position:fixed;top:0;left:0;bottom:0;right:0;z-index:2001;display:none}.demo-toolbar{background:#333;height:60px;border-bottom:3px solid #ccc}.demo-toolbar .intro{font-size:30px;display:block;top:9px;position:absolute;color:#fff;left:20px;font-weight:700}@media (max-width:480px){.demo-toolbar .intro{display:none}}.demo-toolbar .intro a{color:#d74d2f}.demo-toolbar a.close{top:10px;right:20px;position:absolute}.demo-iframe-holder{position:fixed;right:0;bottom:0;left:0;top:63px;background:rgba(255,255,255,.8);-webkit-overflow-scrolling:touch;overflow-y:scroll}a.wufoo,a.wufoo svg{overflow:hidden}.demo-iframe-holder iframe{height:100%;width:100%}.demo-conversion{padding:5px 10px;background:rgba(105,199,115,.3);font-weight:700;margin-bottom:10px}.demo-page #masthead-title,.demo-page .logo .fa-caret-down{display:none}.demo-page main{float:none;max-width:none;margin-right:300px}@media (max-width:1024px){.demo-page main{margin-right:0}}.demo-page #promoNode span{display:inline-block;margin-right:20px}.demo-intro{padding:5px 10px;background:rgba(246,127,0,.3);margin:10px 0 20px}.comments{margin:0 0 40px;font-size:18px}.comments a{word-wrap:break-word}.comments li{position:relative}.comments li:hover .box .comment-controls a{color:#07a;opacity:.8}.comment-controls a,.comment-user,.comment-user a{color:rgba(0,0,0,.8)}.comments img{position:absolute;left:0;top:10px;max-width:48px;border-radius:50%}.x-long,a.wufoo svg{max-height:90px;max-width:728px}.comments .box{margin-bottom:10px;min-height:32px;padding:10px;background:#f9f9f9}.comments .children{margin-left:20px}@media (max-width:768px){.demo-page .bsap{display:none}.comments li{z-index:2}.comments img{display:none}.comments .children{margin-left:0}}.comments .children li{margin:0 0 10px 20px}.comments .children li .box{background:rgba(249,249,249,.8);padding-left:40px}.comments .children li:last-child{margin-bottom:0}.comments .dw .box{background:rgba(0,147,204,.1)!important;border-color:rgba(0,119,170,.2)}.comments .dw img{border-radius:0}.comments.avatars>li{padding-left:10px}@media (max-width:768px){.comments .children li .box{padding-left:10px}.comments.avatars>li{padding-left:0}}.comments.avatars .box{padding-left:50px}@media (max-width:768px){.comments.avatars .box{padding-left:10px}}.comments.avatars .children li img{left:-20px}.comments pre[class*=language-]{border:1px solid #eee;background:#fff!important}.comment-user{font-weight:700;margin-bottom:6px;position:relative}.comment-controls{position:absolute;right:10px;top:6px}#ace-box,#gb-bio,.x-long{position:relative}.comment-controls a{opacity:.2;margin:0 0 0 6px}@media (max-width:1024px){.comment-controls{font-size:120%}.comment-controls a{margin-left:12px;color:#07a;opacity:1}}#comment-use-editor{font-size:14px}#ace-box{height:200px;margin-bottom:20px}.comment-content>:not(pre){margin-bottom:10px}.comment-content pre,.comment-content pre[class*=language-]{background:#fdfdfd;padding:10px!important}.comment-content iframe,div[data-fiddle],div[data-gist]{margin:20px 0}.gist .blob-code-inner,body div[data-gist] .gist .line-pre,body div[data-gist] .line-numbers,body div[data-gist] pre{font-size:15px!important}.subscribe-to-comments{margin:10px 0}button,input[type=submit]{font-size:inherit;-webkit-appearance:none}select{font-size:inherit}#comment-form{margin-bottom:20px}#comment-form label{font-weight:700;margin-right:1%;width:31%;display:inline-block}#comment-form label:nth-child(3){margin-right:0;width:33%}#comment-form label[for=subscribe]{width:auto;margin:10px 0 20px}#comment-form .label{display:none}.x-long,a.wufoo,pre{display:block}#comment-form input[type=email],#comment-form input[type=search],#comment-form input[type=text],#comment-form input[type=url],#comment-form textarea{padding:6px;border:1px solid #ccc;box-sizing:border-box;width:100%;background:#f9f9f9;font-size:18px}#comment-form input[type=email]:focus,#comment-form input[type=search]:focus,#comment-form input[type=text]:focus,#comment-form input[type=url]:focus,#comment-form textarea:focus{background:#fff}#comment-form textarea{width:100%;min-height:200px}.hint,.subscribe-to-comments{margin:20px 0 4px;font-style:italic;font-size:16px}#launch-editor{font-size:15px;color:#999}#launch-editor i{margin-right:4px}main .x-long{margin-left:auto;margin-right:auto;margin-bottom:30px}main .post-list .x-long{margin-bottom:0}.ad-center{margin:0 auto}a.wufoo .letter{-webkit-transform:scale(.45);-ms-transform:scale(.45);transform:scale(.45)}a.wufoo .byline,a.wufoo .illustration,a.wufoo .letter,a.wufoo .swirl,a.wufoo .text{opacity:.6}a.wufoo .illustration{-webkit-transform:scale(1.2);-ms-transform:scale(1.2);transform:scale(1.2)}a.wufoo .byline,a.wufoo .illustration,a.wufoo .letter,a.wufoo .text{-webkit-transition:all .6s;-ms-transition:all .6s;transition:all .6s}.new a.wufoo .byline,.new a.wufoo .illustration,.new a.wufoo .letter,.new a.wufoo .text{-webkit-transition:none;-ms-transition:none;transition:none}a.wufoo.complete .letter{opacity:1;-webkit-transform:scale(.5);-ms-transform:scale(.5);transform:scale(.5)}a.wufoo.complete .letter:nth-of-type(2){-webkit-transition-delay:.2s;-ms-transition-delay:.2s;transition-delay:.2s}a.wufoo.complete .letter:nth-of-type(3){-webkit-transition-delay:.3s;-ms-transition-delay:.3s;transition-delay:.3s}a.wufoo.complete .letter:nth-of-type(4){-webkit-transition-delay:.4s;-ms-transition-delay:.4s;transition-delay:.4s}a.wufoo.complete .letter:nth-of-type(5){-webkit-transition-delay:.5s;-ms-transition-delay:.5s;transition-delay:.5s}a.wufoo.complete .byline,a.wufoo.complete .illustration,a.wufoo.complete .text{opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition-delay:.5s;-ms-transition-delay:.5s;transition-delay:.5s}article a.wufoo{margin:20px 0}input[type=text],input[type=password],textarea{border:1px solid #ccc;padding:3px;font-size:inherit}.fa-facebook-square{color:#3b5998}.fa-google-plus-square{color:#d74d2f}.fa-twitter-square{color:#7ac9ed}.pagination{margin-bottom:40px}.pagination .fa-arrow-circle-o-left{margin-left:0;margin-right:10px}.actions{margin-bottom:20px}#comment-form input[type=submit],.actions a,.green-button,.pagination a{background:#69c773;border:0;border-bottom:3px solid rgba(73,134,18,.3);color:#fff;font-weight:400;font-size:20px;transition:border-color 1s;text-decoration:none;white-space:nowrap}#comment-form input[type=submit]:active,#comment-form input[type=submit]:focus,#comment-form input[type=submit]:hover,.actions a:active,.actions a:focus,.actions a:hover,.green-button:active,.green-button:focus,.green-button:hover,.pagination a:active,.pagination a:focus,.pagination a:hover{border-color:rgba(73,134,18,.7)}@media (max-width:768px){#comment-form input[type=submit],.actions a,.green-button,.pagination a{font-size:16px}}pre,pre[class*=language-]{background:#fff!important;padding:0!important;-webkit-tab-size:2;-moz-tab-size:2;tab-size:2}code{padding:2px 6px;background:#f0f0f0;border-radius:3px}article li code,article p code{white-space:nowrap;font-size:80%;color:#000}pre{padding:0;background:inherit}aside,blockquote{border:1px solid #eee;background:#f9f9f9;padding:10px}.article-block{margin:40px 0}.article-block h2,.home-features h2{margin-bottom:10px}.article-block h2{background:#eee;padding:10px 16px;font-size:24px}.post-list-topics h2,.post-more h2{background:#eee}.post-list-topics img.post-image,.post-more img.post-image{width:15%;margin-top:0}.post-more h2 a{color:#444!important}.post-list-topics{margin-top:20px}.update{background:#f3f3f3}#gb-bio,.gb-intro{border:1px solid rgba(122,201,237,.1);background:rgba(122,201,237,.1);font-size:18px}#gb-bio{padding-left:184px;min-height:170px}#gb-bio a,#gb-bio h2{margin-top:8px;color:#d74d2f}#gb-bio img{border:5px solid #f3f3f3;box-shadow:1px 1px 2px #666;width:150px;height:150px;position:absolute;left:10px;top:10px;border-radius:50%}@media (max-width:768px){#gb-bio{padding-left:12px;min-height:0}#gb-bio img{display:none}}.gb-links{text-transform:lowercase;margin-top:-20px}.gb-links a{display:inline-block;margin-right:20px;background:rgba(255,255,255,.8);padding:2px 6px;border:1px solid rgba(122,201,237,.4)}.gb-links i{margin-right:6px;font-size:18px;margin-top:2px}.deal-callout code{background:rgba(246,127,0,.5);color:rgba(0,0,0,.8);border-radius:3px;padding:0 7px}.sidebar-event a{color:#008b93}.sidebar-event img{margin:0 auto}.sidebar-event strong{display:block;font-size:16px;color:rgba(0,0,0,.8)}.cp_embed_iframe{border:1px solid #3d3d3e}.twitter-tweet{margin:0 auto 40px!important}body #postmatic-widget-bottom_calderaModal{margin-right:20px!important}body #prompt-comment-subscribe{display:block;width:auto;margin-bottom:20px}@media print{.center,main{padding:0}.ad,.sidebar,footer,header{display:none}main{width:auto;float:none}}@keyframes shake{0%{transform:translate(2px,1px) rotate(0)}10%{transform:translate(-1px,-2px) rotate(-1deg)}20%{transform:translate(-3px,0) rotate(1deg)}30%{transform:translate(0,2px) rotate(0)}40%{transform:translate(1px,-1px) rotate(1deg)}50%{transform:translate(-1px,2px) rotate(-1deg)}60%{transform:translate(-3px,1px) rotate(0)}70%{transform:translate(2px,1px) rotate(-1deg)}80%{transform:translate(-1px,-1px) rotate(1deg)}90%{transform:translate(2px,2px) rotate(0)}100%{transform:translate(1px,-2px) rotate(-1deg)}}@keyframes thump{0%,100%{transform:scale(1)}50%{transform:scale(.9)}}
+/*# sourceMappingURL=maps/style.css.map */
+code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#a67f59;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.function{color:#DD4A68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style>
+<!-- touch and favorite icons --><link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://davidwalsh.name/wp-content/themes/punky/images/favicon-144.png"><link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://davidwalsh.name/wp-content/themes/punky/images/favicon-114.png"><link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://davidwalsh.name/wp-content/themes/punky/images/favicon-72.png"><link rel="apple-touch-icon-precomposed" href="https://davidwalsh.name/wp-content/themes/punky/images/favicon-57.png"><link rel="shortcut icon" href="https://davidwalsh.name/wp-content/themes/punky/images/favicon-32.png"><!-- links --><link rel="start" href="https://davidwalsh.name/" title="David Walsh Blog"><link rel="alternate" type="application/atom+xml" title="David Walsh Blog Atom Feed" href="https://davidwalsh.name/feed/atom"><link rel="alternate" type="application/rss+xml" title="David Walsh Blog RSS 2.0 Feed" href="https://davidwalsh.name/feed"><link rel="alternate" type="application/rss+xml" title="David Walsh Blog Comments RSS 2.0 Feed" href="https://davidwalsh.name/comments/feed"><link rel="alternate" type="application/rdf+xml" title="David Walsh Blog RSS 1.0" href="https://davidwalsh.name/feed/rdf"><link rel="alternate" type="text/xml" title="David Walsh Blog RSS 0.92 Feed" href="https://davidwalsh.name/feed/rss"><link rel="pingback" href="https://davidwalsh.name/xmlrpc.php"><link rel="search" type="application/opensearchdescription+xml" href="https://davidwalsh.name/opensearch.xml" title="David Walsh Blog Search"><!-- Google Plus Publisher --><meta name="author" content="David Walsh"><!-- BEGIN TRACKJS --><script async="" src="Create%20Zip%20Files%20with%20JavaScript_files/analytics.js"></script><script type="text/javascript">window._trackJs = { token: '85a3267cff7d4bc5b38573484d819a11' };</script><script type="text/javascript" src="Create%20Zip%20Files%20with%20JavaScript_files/tracker.js"></script><!-- END TRACKJS --><!--[if IE]><script src=//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js></script><![endif]-->
+<!-- This site is optimized with the Yoast SEO plugin v12.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://davidwalsh.name/javascript-zip">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Create Zip Files with JavaScript">
+<meta property="og:description" content="While we’re doing amazing things with JavaScript on the server side, it’s important not to take our eyes off of some of the great stuff happening on the client side. &nbsp;One such awesome project I recently discovered was JSZip: &nbsp;a JavaScript library that allows you to easily generate ZIP files from the front-end. &nbsp;And why …">
+<meta property="og:url" content="https://davidwalsh.name/javascript-zip">
+<meta property="og:site_name" content="David Walsh Blog">
+<meta property="article:publisher" content="https://www.facebook.com/davidwalshblog">
+<meta property="article:section" content="JavaScript">
+<meta property="article:published_time" content="2017-08-29T13:41:46+00:00">
+<meta property="og:image" content="https://davidwalsh.name/wp-content/themes/punky/images/logo.png">
+<meta property="og:image:secure_url" content="https://davidwalsh.name/wp-content/themes/punky/images/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="While we’re doing amazing things with JavaScript on the server side, it’s important not to take our eyes off of some of the great stuff happening on the client side. &nbsp;One such awesome project I recently discovered was JSZip: &nbsp;a JavaScript library that allows you to easily generate ZIP files from the front-end. &nbsp;And why […]">
+<meta name="twitter:title" content="Create Zip Files with JavaScript">
+<meta name="twitter:site" content="@davidwalshblog">
+<meta name="twitter:image" content="https://davidwalsh.name/wp-content/themes/punky/images/logo.png">
+<meta name="twitter:creator" content="@davidwalshblog">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/davidwalsh.name\/#website","url":"https:\/\/davidwalsh.name\/","name":"David Walsh Blog","publisher":{"@id":"https:\/\/davidwalsh.name\/#\/schema\/person\/"},"potentialAction":{"@type":"SearchAction","target":"https:\/\/davidwalsh.name\/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https:\/\/davidwalsh.name\/javascript-zip#webpage","url":"https:\/\/davidwalsh.name\/javascript-zip","inLanguage":"en-US","name":"Create Zip Files with JavaScript","isPartOf":{"@id":"https:\/\/davidwalsh.name\/#website"},"datePublished":"2017-08-29T13:41:46+00:00","dateModified":"2017-08-29T13:41:46+00:00"},{"@type":"Article","@id":"https:\/\/davidwalsh.name\/javascript-zip#article","isPartOf":{"@id":"https:\/\/davidwalsh.name\/javascript-zip#webpage"},"author":{"@id":"https:\/\/davidwalsh.name\/#\/schema\/person\/40adb3cd627ddeab4518117273f43383"},"headline":"Create Zip Files with JavaScript","datePublished":"2017-08-29T13:41:46+00:00","dateModified":"2017-08-29T13:41:46+00:00","commentCount":"6","mainEntityOfPage":{"@id":"https:\/\/davidwalsh.name\/javascript-zip#webpage"},"publisher":{"@id":"https:\/\/davidwalsh.name\/#\/schema\/person\/"},"articleSection":"JavaScript"},{"@type":["Person"],"@id":"https:\/\/davidwalsh.name\/#\/schema\/person\/40adb3cd627ddeab4518117273f43383","name":"David Walsh","sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="David Walsh Blog » Create Zip Files with JavaScript Comments Feed" href="https://davidwalsh.name/javascript-zip/feed">
+<link rel="stylesheet" id="wp-block-library-css" href="Create%20Zip%20Files%20with%20JavaScript_files/style.css" type="text/css" media="all">
+<link rel="https://api.w.org/" href="https://davidwalsh.name/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://davidwalsh.name/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://davidwalsh.name/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.0.2">
+<link rel="shortlink" href="https://davidwalsh.name/?p=26213">
+<link rel="alternate" type="application/json+oembed" href="https://davidwalsh.name/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdavidwalsh.name%2Fjavascript-zip">
+<link rel="alternate" type="text/xml+oembed" href="https://davidwalsh.name/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdavidwalsh.name%2Fjavascript-zip&amp;format=xml">
+<meta name="robots" content="index,follow"><script type="text/javascript" id="_bsap_js_db3b221ddd8cbba67739ae3837520ffe" src="Create%20Zip%20Files%20with%20JavaScript_files/s_db3b221ddd8cbba67739ae3837520ffe.js" async="async"></script><script type="text/javascript" src="Create%20Zip%20Files%20with%20JavaScript_files/pro.js" id="_bsap_premium_pro"></script><script type="text/javascript" id="_bsaPRO_js" src="Create%20Zip%20Files%20with%20JavaScript_files/a" async="async"></script></head><body class="single fixed"><script>z={analyticsID:"UA-2087880-2",themePath:"/wp-content/themes/punky",pluginPath:"libs/curl/src/curl/plugin/",domain:"davidwalsh.name",loadSidebar:!(-1!=navigator.userAgent.toLowerCase().indexOf("googlebot")),d:document,w:this},z.baseUrl=z.themePath+"/js/",location.hostname.indexOf(z.domain)<0&&(z.isDebug=1,z.analyticsID=0),z.moo=z.baseUrl+"MooTools-Core-1.6.0.js";z.analyticsID&&function(){!function(e,a,t,n,c,s,i){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,s=a.createElement(t),i=a.getElementsByTagName(t)[0],s.async=1,s.src=n,i.parentNode.insertBefore(s,i)}(z.w,z.d,"script","//www.google-analytics.com/analytics.js","ga"),ga("create",z.analyticsID,{siteSpeedSampleRate:50}),ga("set","forceSSL",!0),ga("send","pageview"),ga("set","nonInteraction",!0)}();</script>
+<!-- accessibility header --><ul class="a11y-menu"><li><a href="https://davidwalsh.name/">Home</a></li><li><a href="#main">Main Content</a></li></ul><!-- site header and nav menu --><header id="top"><div class="center clear"><div class="header-title"><a href="https://davidwalsh.name/" class="logo"><img alt="" src="Create%20Zip%20Files%20with%20JavaScript_files/logo.png"><span>DWB</span><i class="fa fa-bars" data-open-icon="fa-times" aria-hidden="true" id="logo-icon"></i></a><nav id="main-nav"><div class="relative clear"><i class="fa fa-caret-up" aria-hidden="true"></i><ul class="main-nav-left"><li><a href="https://davidwalsh.name/">Home</a></li><li><a href="https://davidwalsh.name/page/1" data-content="tutorials">Tutorials</a></li><li><a href="https://davidwalsh.name/tutorials/features" data-content="features">Features</a></li><li><a href="https://davidwalsh.name/tutorials/demos" data-content="demos">Demos</a></li><li><a href="https://davidwalsh.name/topics" data-content="popular">Topics</a></li><li><a href="https://davidwalsh.name/about" data-content="about">The Blog</a></li></ul><ul class="main-nav-right"><li id="nav-tutorials"><div class="heading">Recent Tutorials</div><ul class="nav-posts"><li><a href="https://davidwalsh.name/sports-data-for-developers-sportdataapi" class="bold">Sports Data for Developers:&nbsp;SportdataAPI</a></li><li><a href="https://davidwalsh.name/leaving-mozilla">39 Shirts - Leaving&nbsp;Mozilla</a></li><li><a href="https://davidwalsh.name/mediastack">Curate Custom Content with&nbsp;mediastack</a></li><li><a href="https://davidwalsh.name/detect-sticky">How to Detect When a Sticky Element Gets&nbsp;Pinned</a></li><li><a href="https://davidwalsh.name/shoelace-css-2">Shoelace 2.0: A Forward-thinking Library of Web&nbsp;Components</a></li></ul></li><li id="nav-features"><div class="heading">Recent Features</div><ul class="nav-posts"><li><a href="https://davidwalsh.name/leaving-mozilla" class="bold">39 Shirts - Leaving&nbsp;Mozilla</a></li><li><a href="https://davidwalsh.name/bitcoin-tips">Tips for Starting with Bitcoin and&nbsp;Cryptocurrencies</a></li><li><a href="https://davidwalsh.name/pornhub-interview">Interview with a Pornhub Web&nbsp;Developer</a></li><li><a href="https://davidwalsh.name/new-office">Welcome to My New&nbsp;Office</a></li><li><a href="https://davidwalsh.name/retropie-graphical-guide">How to Create a RetroPie on Raspberry Pi - Graphical&nbsp;Guide</a></li></ul></li><li id="nav-demos"><div class="heading">Interactive Demos</div><ul class="nav-posts"><li><a href="https://davidwalsh.name/chris-coyiers-favorite-codepen-demos-iv" class="bold">Chris Coyier’s Favorite CodePen Demos&nbsp;IV</a></li><li><a href="https://davidwalsh.name/prefers-color-scheme">prefers-color-scheme: CSS Media&nbsp;Query</a></li><li><a href="https://davidwalsh.name/css-ellipsis-left">CSS Ellipsis Beginning of&nbsp;String</a></li><li><a href="https://davidwalsh.name/vertical-center-flexbox">Vertically Centering with&nbsp;Flexbox</a></li><li><a href="https://davidwalsh.name/flexbox-spacer">Creating Spacers with&nbsp;Flexbox</a></li></ul></li><li id="nav-popular"><div class="heading">Popular Topics</div><ul class="nav-posts half"><li><a href="https://davidwalsh.name/tutorials/html5" class="bold">HTML5</a></li><li><a href="https://davidwalsh.name/tutorials/css/animations">CSS Animations</a></li><li><a href="https://davidwalsh.name/tutorials/firefoxos">Firefox OS</a></li><li><a href="https://davidwalsh.name/tutorials/jquery">jQuery</a></li><li><a href="https://davidwalsh.name/tutorials/mootools">MooTools</a></li><li><a href="https://davidwalsh.name/tutorials/php">PHP</a></li></ul><ul class="nav-posts half"><li><a href="https://davidwalsh.name/tutorials/css" class="bold">CSS3</a></li><li><a href="https://davidwalsh.name/tutorials/wordpress">WordPress</a></li><li><a href="https://davidwalsh.name/tutorials/mobile">Mobile</a></li><li><a href="https://davidwalsh.name/tutorials/seo">SEO</a></li><li><a href="https://davidwalsh.name/tutorials/javascript">JavaScript</a></li><li><a href="https://davidwalsh.name/tutorials/dojo">Dojo Toolkit</a></li></ul></li><li id="nav-about"><div class="heading">David Walsh Blog</div><ul class="nav-posts"><li><a href="https://davidwalsh.name/about-david-walsh" class="bold">About David Walsh</a></li><li><a href="https://davidwalsh.name/contact">Contact and Advertise</a></li><li><a href="https://davidwalsh.name/deals">Developer Deals</a></li><li><a href="https://davidwalsh.name/mozilla">Mozilla</a></li></ul></li></ul></div></nav></div><div class="header-middle"><ul class="social-icons"><li><a href="https://davidwalsh.name/feed" data-noxhr="true" class="rss"><i class="fa fa-rss" aria-hidden="true"></i></a></li><li><a href="https://twitter.com/davidwalshblog" rel="nofollow" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><li><a href="https://facebook.com/davidwalshblog" rel="nofollow" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><li><a href="https://github.com/darkwing" rel="nofollow" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li><li><a href="https://linkedin.com/in/davidjameswalsh" rel="nofollow" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><li><a href="https://davidwalsh.name/?s=search" class="search"><i class="fa fa-search" aria-hidden="true"></i></a></li></ul><div class="header-search"><form action="/"><label for="header-search-field"><span class="offscreen">Search</span><i class="fa fa-search" aria-hidden="true"></i><input type="search" name="s" id="header-search-field"></label></form></div></div>
+
+
+</div></header><div class="new-main-popular"><div class="center"><strong>Popular:</strong><ul><li><a href="https://davidwalsh.name/promises">JavaScript Promises</a></li><li><a href="https://davidwalsh.name/fetch">fetch API</a></li><li><a href="https://davidwalsh.name/tutorials/react">React.js</a></li><li><a href="https://davidwalsh.name/cache">Cache API</a></li><li><a href="https://davidwalsh.name/es6-features">ES6 Features</a></li><li><a href="https://davidwalsh.name/tutorials/nodejs">Node.js</a></li><li><a href="https://davidwalsh.name/tutorials/javascript">JavaScript</a></li><li><a href="https://davidwalsh.name/tutorials/jquery">jQuery</a></li></ul></div></div><div id="masthead-title" aria-hidden="true"><div class="center"><!--MASTHEAD--><ul class="social-icons" id="single-social" data-url="https://davidwalsh.name/javascript-zip" data-title="Create Zip Files with JavaScript" data-twitter-handle=""><li><a href="#comments" class="discuss" title="Join the discussion"><i class="fa fa-comment" aria-hidden="true"></i></a><span>6</span></li><li><a href="javascript:;" rel="nofollow" class="twitter get-count soc" title="Share on Twitter!"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><li><a href="javascript:;" rel="nofollow" class="facebook get-count soc" title="Share on Facebook!"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><li><a href="https://www.reddit.com/submit?url=https://davidwalsh.name/javascript-zip" target="_blank" class="reddit" title="Share on Reddit"><i class="fa fa-reddit" aria-hidden="true"></i></a></li><li><a href="#top" class="top" title="Go to top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></li></ul><div id="masthead-title-text">Create Zip Files with&nbsp;JavaScript</div><!--/MASTHEAD--></div></div><!-- content wrapper --><div class="main"><div class="center clear"><!-- main content column --><main id="main"><!--CONTENT--><div class="oreilly-callout" style="background:#7372a5;"><a href="http://www.oreilly.com/pub/cpc/77171" style="color: #fff;"><i class="fa fa-arrow-circle-o-right"></i>
+&nbsp;<strong style="color:yellow">Building Resilient Systems on AWS</strong>: Learn how to design and implement a resilient, highly available, fault-tolerant infrastructure on AWS.</a></div><style>
+.oreilly-callout {
+background: #231f20;
+margin-bottom: 30px;
+padding: 5px 10px;
+border-radius: 6px;
+display: none;
+}
+.oreilly-callout a {
+color: #7ac9ed;
+text-decoration: none;
+display: block;
+}
+.oreilly-callout a code {
+color: #fff;
+background-color: #000;
+margin-left: 10px;
+}
+</style><article itemscope="" itemtype="http://schema.org/Article"><h1 itemprop="headline" class="offscreen">Create Zip Files with JavaScript</h1><div class="meta" id="meta">
+By
+<a href="http://davidwalsh.name/" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">David Walsh</span></a>&nbsp;on
+<time itemprop="datePublished">August 29, 2017</time>
+&nbsp;
+</div><div class="offscreen"></div><!-- content --><p>While we're doing 
+amazing things with JavaScript on the server side, it's important not to
+ take our eyes off of some of the great stuff happening on the client 
+side. &nbsp;One such awesome project I recently discovered was <a href="https://stuk.github.io/jszip/">JSZip</a>:
+ &nbsp;a JavaScript library that allows you to easily generate ZIP files
+ from the front-end. &nbsp;And why is that useful? &nbsp;You can allow 
+users to select and download images from a gallery or just about 
+anything else. &nbsp;Let's have a look at how JSZip allows you to 
+generate structured Zip files from the client side!</p><div class="x x-long x-secondary">
+    <!--
+    <div class="x-secondary-large">
+        <a href="https://requestmetrics.com/" style=display:block;><object data="https://davidwalsh.name/demo/gofast-728x90.svg" type="image/svg+xml" style="max-width:100%;pointer-events:none;"></object></a>
+    </div>
+    <div class="x-secondary-small">
+        <a href="https://requestmetrics.com/" style=display:block;><object data="https://davidwalsh.name/demo/gofast-300x250.svg" type="image/svg+xml" style="max-width:100%;pointer-events:none;"></object></a>
+    </div>
+    -->
+
+    <div class="x-secondary-large">
+        <a href="https://requestmetrics.com/" style="display:block;">
+            <img src="Create%20Zip%20Files%20with%20JavaScript_files/gofast-long.svg" style="max-width:100%;" alt="Website performance monitoring">
+        </a>
+    </div>
+
+    <div class="x-secondary-small">
+        <a href="https://requestmetrics.com/" style="display:block;">
+            <img src="Create%20Zip%20Files%20with%20JavaScript_files/gofast-block.svg" style="max-width:100%;" alt="Website performance monitoring">
+        </a>
+    </div>
+</div>
+
+<p>Start by grabbing the <a href="https://stuk.github.io/jszip/">JSZip library</a>&nbsp;,
+ which happens to work in all major browsers. &nbsp;Once the library is 
+available within the page, generating a Zip file is really just a few 
+lines of code:</p>
+
+<pre class=" language-js" prism="1"><span class="token keyword">var</span> zip <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSZip</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Add an top-level, arbitrary text file with contents</span>
+zip<span class="token punctuation">.</span><span class="token function">file</span><span class="token punctuation">(</span><span class="token string">"Hello.txt"</span><span class="token punctuation">,</span> <span class="token string">"Hello World\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Generate a directory within the Zip file structure</span>
+<span class="token keyword">var</span> img <span class="token operator">=</span> zip<span class="token punctuation">.</span><span class="token function">folder</span><span class="token punctuation">(</span><span class="token string">"images"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Add a file to the directory, in this case an image with data URI as contents</span>
+img<span class="token punctuation">.</span><span class="token function">file</span><span class="token punctuation">(</span><span class="token string">"smile.gif"</span><span class="token punctuation">,</span> imgData<span class="token punctuation">,</span> <span class="token punctuation">{</span>base64<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Generate the zip file asynchronously</span>
+zip<span class="token punctuation">.</span><span class="token function">generateAsync</span><span class="token punctuation">(</span><span class="token punctuation">{</span>type<span class="token punctuation">:</span><span class="token string">"blob"</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Force down of the Zip file</span>
+    <span class="token function">saveAs</span><span class="token punctuation">(</span>content<span class="token punctuation">,</span> <span class="token string">"archive.zip"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre>
+
+<p>You can add individual files with custom names and contents, as well 
+as arbitrary directories. &nbsp;Once your contents are added, JSZip can 
+asynchronously generate your Zip file and you can subsequently trigger 
+download.</p>
+
+You can also load and read Zip files:
+
+<pre class=" language-js" prism="1"><span class="token keyword">var</span> read_zip <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSZip</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// Load zip content; you'd use fetch to get the content</span>
+read_zip<span class="token punctuation">.</span><span class="token function">loadAsync</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>zip<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Read from the zip file!</span>
+    read_zip<span class="token punctuation">.</span><span class="token function">file</span><span class="token punctuation">(</span><span class="token string">"hello.txt"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token keyword">async</span><span class="token punctuation">(</span><span class="token string">"string"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// a promise of "Hello World\n"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre>
+
+<p>I really appreciate JSZip's simplicity. &nbsp;There are more advanced and complicated libraries available, like <a href="https://gildas-lormeau.github.io/zip.js/">zip.js</a>,
+ but JSZip will likely cover most use cases. &nbsp;One great example of 
+taking advantage of Zip files on the client side is in the <a href="https://serviceworke.rs/cache-from-zip.html">Service Worker Cookbook</a>:
+ cache a Zip file locally, extract its contents, and serve within a 
+service worker. &nbsp;Whatever your use case, know that Zip files can be
+ read and generated without any need for a server!</p>
+
+<!-- secondary ad -->
+
+
+<div id="carbon-block"></div>
+
+<style>
+.x-secondary-small {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .x-secondary {
+        max-height: none;
+    }
+    .x-secondary-large {
+        display: none;
+    }
+    .x-secondary-small {
+        display: block;
+    }
+}
+</style>
+
+<!-- guest blogger --></article>
+
+<div class="article-block" style="min-height:90px"><!-- terciary ad --><div class="x x-long x-terciary" style="max-height: none;">
+  
+    
+  <div class="x-secondary-large">
+      <a href="https://requestmetrics.com/" style="display:block;">
+          <img src="Create%20Zip%20Files%20with%20JavaScript_files/gofast-long.svg" style="max-width:100%;" alt="Website performance monitoring">
+      </a>
+  </div>
+
+  <div class="x-secondary-small">
+      <a href="https://requestmetrics.com/" style="display:block;">
+          <img src="Create%20Zip%20Files%20with%20JavaScript_files/gofast-block.svg" style="max-width:100%;" alt="Website performance monitoring">
+      </a>
+  </div>
+
+  <div class="bsa" data-bsa="1307779|db3b221ddd8cbba67739ae3837520ffe"><div id="bsap_1307779" class="bsap bsap_1307779" data-serve="CKYDEK3L">
+      <style type="text/css">
+        
+          div.bsap_1307779{width:100%;display:block;}div.bsap_1307779 a{width:728px;}div.bsap_1307779 a img{padding:0;}div.bsap_1307779 a em{font-style:normal;}div.bsap_1307779 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;};float:left;}
+div.bsap_1307779 img{border:0;clear:right;}}
+div.bsap_1307779 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}}
+div.bsap_1307779 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}
+div.bsap_1307779 iframe{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;};float:left;}div.bsap_1307779 a{line-height:100%;}div.bsap_1307779 a.adhere{width:728px;height:90px;line-height:720%;}html>body div.bsap_1307779 a.adhere{width:726px;height:88px;}div.bsap_1307779 img.s{height:0;width:0;}div.bsap_1307779{line-height:9px;}div.bsap_1307779 .bsap_adhere2,div.bsap_1307779 iframe{float:left;}div.bsap_1307779 .bsap_adhere2 a{height:90px;width:20px;background:url(http:\/\/s3.buysellads.com\/ac\/ah20x90_1.gif) no-repeat 0 0;text-indent:-9999px;}
+        
+        .bsap_1307779 .ads-via { display: block; }
+        .bsap_1307779 .adhere:nth-of-type(1n+1) { display: none; }
+        .bsap_1307779 .adhere:nth-of-type(1) { display: block; }
+      </style>
+    <!-- no ad -->
+      
+      <script type="text/javascript" id="auto_1" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(1307779); </script>
+    </div></div>
+
+</div>
+</div>
+
+
+<div class="article-block post-more" style="“clear:both;”"><h2><a href="https://davidwalsh.name/tutorials/features">Recent Features<i class="fa fa-arrow-circle-o-right"></i></a></h2><ul class="post-list small-list"><li data-url="https://davidwalsh.name/vibration-api" itemscope="" itemtype="http://schema.org/Article"><div class="meta">By <a href="http://davidwalsh.name/" rel="author" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">David Walsh</span></a><time itemprop="datePublished">December 6, 2012</time></div><span itemscope="" itemtype="https://schema.org/ImageObject"><img class="post-image" alt="Vibration API" src="Create%20Zip%20Files%20with%20JavaScript_files/html5250.png"></span><div class="preview"><h3 itemprop="name"><a href="https://davidwalsh.name/vibration-api" itemprop="url">Vibration&nbsp;API</a></h3><p>Many
+ of the new APIs provided to us by browser vendors are more targeted 
+toward the mobile user than the desktop user. &nbsp;One of those simple 
+APIs the <a href="http://www.w3.org/TR/vibration/" rel="nofollow">Vibration API</a>. &nbsp;The Vibration API allows developers to direct the device, using JavaScript, to vibrate in...</p></div></li><li data-url="https://davidwalsh.name/convert-xml-json" itemscope="" itemtype="http://schema.org/Article"><div class="meta">By <a href="http://davidwalsh.name/" rel="author" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">David Walsh</span></a><time itemprop="datePublished">April 4, 2011</time></div><span itemscope="" itemtype="https://schema.org/ImageObject"><img class="post-image" alt="Convert XML to JSON with JavaScript" src="Create%20Zip%20Files%20with%20JavaScript_files/JavaScriptListImage.png"></span><div class="preview"><h3 itemprop="name"><a href="https://davidwalsh.name/convert-xml-json" itemprop="url">Convert XML to JSON with&nbsp;JavaScript</a></h3><p>If you <a href="http://twitter.com/davidwalshblog">follow me on Twitter</a>, you know that I've been working on a super top secret mobile application using <a href="http://www.appcelerator.com/">Appcelerator Titanium</a>.
+ &nbsp;The experience has been great: &nbsp;using JavaScript to create 
+easy to write, easy to test, native mobile apps has been fun. 
+&nbsp;My...</p></div></li></ul></div><div class="article-block post-more"><h2><a href="https://davidwalsh.name/tutorials/demos">Incredible Demos<i class="fa fa-arrow-circle-o-right"></i></a></h2><ul class="post-list small-list"><li data-url="https://davidwalsh.name/mootools-highlighter-search" itemscope="" itemtype="http://schema.org/Article"><div class="meta">By <a href="http://davidwalsh.name/" rel="author" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">David Walsh</span></a><time itemprop="datePublished">June 29, 2009</time></div><span itemscope="" itemtype="https://schema.org/ImageObject"><img class="post-image" alt="Highlighter: A MooTools Search &amp;#038; Highlight Plugin" src="Create%20Zip%20Files%20with%20JavaScript_files/css3logo250.jpg"></span><div class="preview"><h3 itemprop="name"><a href="https://davidwalsh.name/mootools-highlighter-search" itemprop="url">Highlighter: A MooTools Search &amp; Highlight&nbsp;Plugin</a></h3><p>Searching
+ within the page is a major browser functionality, but what if we could 
+code a search box in JavaScript that would do the same thing?  I set out
+ to do that using MooTools and ended up with a pretty decent solution.
+
+
+
+
+The MooTools JavaScript Class
+
+
+
+The...</p></div></li><li data-url="https://davidwalsh.name/mootools-drag-drop" itemscope="" itemtype="http://schema.org/Article"><div class="meta">By <a href="http://davidwalsh.name/" rel="author" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><span itemprop="name">David Walsh</span></a><time itemprop="datePublished">November 14, 2008</time></div><span itemscope="" itemtype="https://schema.org/ImageObject"><img class="post-image" alt="Using MooTools 1.2 For Drag, Drop, Sort, Save" src="Create%20Zip%20Files%20with%20JavaScript_files/css3logo250.jpg"></span><div class="preview"><h3 itemprop="name"><a href="https://davidwalsh.name/mootools-drag-drop" itemprop="url">Using MooTools 1.2 For Drag, Drop, Sort,&nbsp;Save</a></h3><p>This post has been updated:  <a href="https://davidwalsh.name/mootools-drag-ajax">Using jQuery or MooTools For Drag, Drop, Sort, Save</a>.  The code on this page is no longer best practice.
+The following is a repost of an article that ran on <a href="http://scriptandstyle.com/">Script &amp; Style</a> a few months ago....
+
+<a href="https://davidwalsh.name/demo/sort-save.php"></a>
+My...</p></div></li></ul></div><!-- <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://davidwalsh.name/javascript-zip"
+    dc:identifier="https://davidwalsh.name/javascript-zip"
+    dc:title="Create Zip Files with JavaScript"
+    trackback:ping="https://davidwalsh.name/javascript-zip/trackback" />
+</rdf:RDF> --><!-- comments --><div class="article-block"><h2 id="comments">Discussion</h2><ol class="comments avatars" id="comment-list"><li id="comment-510634" data-avatar="//gravatar.com/avatar.php?gravatar_id=f4d22ad03e51d59d4d95a812a45f9261&amp;size=48&amp;rating=G&amp;default=https://davidwalsh.name/wp-content/themes/punky/images/anon.jpg"><img src="Create%20Zip%20Files%20with%20JavaScript_files/avatar_002.jpg" alt=""><div class="box"><div class="comment-user">Andrew Wooldridge</div><div class="comment-content"><p>Thank you so much for this!  I am creating a web based RPG maker, and I needed a way to create zip archives. This is perfect!</p>
+</div><div class="comment-controls"><a href="#comment-510634"><i class="fa fa-bookmark" aria-hidden="true"></i></a><a href="javascript:;"><i aria-hidden="true" class="fa fa-reply"></i></a></div></div></li><!-- #comment-## -->
+<li id="comment-511628" data-avatar="//gravatar.com/avatar.php?gravatar_id=acea2849986098459e61944ab2f1c8e0&amp;size=48&amp;rating=G&amp;default=https://davidwalsh.name/wp-content/themes/punky/images/anon.jpg"><img src="Create%20Zip%20Files%20with%20JavaScript_files/avatar_004.webp" alt=""><div class="box"><div class="comment-user">Steve Fu</div><div class="comment-content"><p>May I know if this solution works in Mobile / Tablet App?</p>
+</div><div class="comment-controls"><a href="#comment-511628"><i class="fa fa-bookmark" aria-hidden="true"></i></a><a href="javascript:;"><i aria-hidden="true" class="fa fa-reply"></i></a></div></div></li><!-- #comment-## -->
+<li id="comment-513352" data-avatar="//gravatar.com/avatar.php?gravatar_id=de1f65407114921cbe239d79de3ca4df&amp;size=48&amp;rating=G&amp;default=https://davidwalsh.name/wp-content/themes/punky/images/anon.jpg"><img src="Create%20Zip%20Files%20with%20JavaScript_files/avatar.webp" alt=""><div class="box"><div class="comment-user"><a href="http://www.lahode.ch/" rel="external nofollow" class="url">Astro</a></div><div class="comment-content"><p>Hi, thanks for your article.</p>
+<p>Your missing one point, the saveAs function.</p>
+<p>Either, you can use FileSaver.js if you work with NodeJS (server side) mentionned in <a href="https://stuk.github.io/jszip/" rel="nofollow">https://stuk.github.io/jszip/</a></p>
+<p>Or you can use the following function if you work on the client side only:</p>
+<pre class=" language-javascript" prism="1"><span class="token keyword">function</span> <span class="token function">saveAs</span><span class="token punctuation">(</span>blob<span class="token punctuation">,</span> filename<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> navigator<span class="token punctuation">.</span>msSaveOrOpenBlob <span class="token operator">!==</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> navigator<span class="token punctuation">.</span><span class="token function">msSaveOrOpenBlob</span><span class="token punctuation">(</span>blob<span class="token punctuation">,</span> fileName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> navigator<span class="token punctuation">.</span>msSaveBlob <span class="token operator">!==</span> <span class="token string">'undefined'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> navigator<span class="token punctuation">.</span><span class="token function">msSaveBlob</span><span class="token punctuation">(</span>blob<span class="token punctuation">,</span> fileName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> elem <span class="token operator">=</span> window<span class="token punctuation">.</span>document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    elem<span class="token punctuation">.</span>href <span class="token operator">=</span> window<span class="token punctuation">.</span>URL<span class="token punctuation">.</span><span class="token function">createObjectURL</span><span class="token punctuation">(</span>blob<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    elem<span class="token punctuation">.</span>download <span class="token operator">=</span> filename<span class="token punctuation">;</span>
+    elem<span class="token punctuation">.</span>style <span class="token operator">=</span> <span class="token string">'display:none;opacity:0;color:transparent;'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">(</span>document<span class="token punctuation">.</span>body <span class="token operator">||</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>elem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> elem<span class="token punctuation">.</span>click <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      elem<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      elem<span class="token punctuation">.</span>target <span class="token operator">=</span> <span class="token string">'_blank'</span><span class="token punctuation">;</span>
+      elem<span class="token punctuation">.</span><span class="token function">dispatchEvent</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">MouseEvent</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        view<span class="token punctuation">:</span> window<span class="token punctuation">,</span>
+        bubbles<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        cancelable<span class="token punctuation">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    URL<span class="token punctuation">.</span><span class="token function">revokeObjectURL</span><span class="token punctuation">(</span>elem<span class="token punctuation">.</span>href<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></pre>
+</div><div class="comment-controls"><a href="#comment-513352"><i class="fa fa-bookmark" aria-hidden="true"></i></a><a href="javascript:;"><i aria-hidden="true" class="fa fa-reply"></i></a></div></div></li><!-- #comment-## -->
+<li id="comment-513562" data-avatar="//gravatar.com/avatar.php?gravatar_id=a9fd4753c663a8a8dbdd8ffc5feb57c3&amp;size=48&amp;rating=G&amp;default=https://davidwalsh.name/wp-content/themes/punky/images/anon.jpg"><img src="Create%20Zip%20Files%20with%20JavaScript_files/avatar_003.webp" alt=""><div class="box"><div class="comment-user">Gabriel</div><div class="comment-content"><p>What is ‘imgData’?  how I can get this?</p>
+</div><div class="comment-controls"><a href="#comment-513562"><i class="fa fa-bookmark" aria-hidden="true"></i></a><a href="javascript:;"><i aria-hidden="true" class="fa fa-reply"></i></a></div></div></li><!-- #comment-## -->
+<li id="comment-514706" data-avatar="//gravatar.com/avatar.php?gravatar_id=f9bbc701ca6770ef482cc1e172344e25&amp;size=48&amp;rating=G&amp;default=https://davidwalsh.name/wp-content/themes/punky/images/anon.jpg"><img src="Create%20Zip%20Files%20with%20JavaScript_files/avatar.jpg" alt=""><div class="box"><div class="comment-user"><a href="https://www.bennadel.com/" rel="external nofollow" class="url">Ben Nadel</a></div><div class="comment-content"><p>This
+ is _really cool_! I’m so excited to find out that the client-side code 
+can now handle all these interesting little use-cases. I’m planning to 
+combine this technique with <code>html2canvas()</code> to generate PNG files on the client and then Zip them together. What a wonderful time to be alive!</p>
+</div><div class="comment-controls"><a href="#comment-514706"><i class="fa fa-bookmark" aria-hidden="true"></i></a><a href="javascript:;"><i aria-hidden="true" class="fa fa-reply"></i></a></div></div></li><!-- #comment-## -->
+<li id="comment-515003" data-avatar="//gravatar.com/avatar.php?gravatar_id=b7b0d23de6cfdf42483f2c499473d69b&amp;size=48&amp;rating=G&amp;default=https://davidwalsh.name/wp-content/themes/punky/images/anon.jpg"><img src="Create%20Zip%20Files%20with%20JavaScript_files/avatar_002.webp" alt=""><div class="box"><div class="comment-user">Souvik</div><div class="comment-content"><p>How can I tweak this such that instead of downloading zip, I can just create the zip and send it to a server through ajax?</p>
+</div><div class="comment-controls"><a href="#comment-515003"><i class="fa fa-bookmark" aria-hidden="true"></i></a><a href="javascript:;"><i aria-hidden="true" class="fa fa-reply"></i></a></div></div></li><!-- #comment-## -->
+</ol></div><div class="article-block"><div id="comment-form-holder"><div id="comment-form"><form action="/wp-comments-post.php" id="cForm" method="post"><label><span class="label">Name:</span><input placeholder="Name" type="text" name="author" maxlength="50" required=""></label><label><span class="label">Email:</span><input placeholder="Email" name="email" type="email" required=""></label><label><span class="label">Website:</span><input placeholder="Website" type="text" name="url"></label><p class="hint">Wrap your code in <code>&lt;pre class="{language}"&gt;&lt;/pre&gt;</code> tags, link to a GitHub gist, JSFiddle fiddle,  or CodePen pen to embed!</p><textarea id="comment" name="comment" tabindex="4" required="required"></textarea><input type="hidden" id="comment_parent" name="comment_parent"><input type="hidden" name="comment_post_ID" value="26213"><label id="prompt-comment-subscribe"><input type="checkbox" name="prompt_comment_subscribe" value="1">&nbsp;<span class="postmatic-tooltip">Continue this conversation via email<em>Get
+ only replies to your comment, the best of the rest, as well as a daily 
+recap of all comments on this post. No more than a few emails daily, 
+which you can reply to/unsubscribe from directly from your inbox.</em></span></label><input type="submit" name="submit" value="Post Comment!" class="green-button"><button id="launch-editor" type="button">Use Code Editor</button></form></div></div></div><!--/CONTENT--></main><div class="sidebar" style="visibility: visible; opacity: 1;"><!-- sidebar -->
+
+<h2 class="offscreen">Sidebar</h2>
+
+
+
+<div class="sidebar-sda-large clear" style="display:none;">
+    <div class="bsa" data-bsa="1308050|db3b221ddd8cbba67739ae3837520ffe"><div id="bsap_1308050" class="bsap bsap_1308050" data-serve="CKYI62QY">
+      <style type="text/css">
+        
+          div.bsap_1308050{width:100%;display:block;}div.bsap_1308050 a{width:300px;}div.bsap_1308050 a img{padding:0;}div.bsap_1308050 a em{font-style:normal;}div.bsap_1308050 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;};float:left;}
+div.bsap_1308050 img{border:0;clear:right;}}
+div.bsap_1308050 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}}
+div.bsap_1308050 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}
+div.bsap_1308050 iframe{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;};float:left;}div.bsap_1308050 a{line-height:100%;}div.bsap_1308050 a.adhere{width:300px;height:250px;line-height:2000%;}html>body div.bsap_1308050 a.adhere{width:298px;height:248px;}div.bsap_1308050 img.s{height:0;width:0;}
+        
+        .bsap_1308050 .ads-via { display: block; }
+        .bsap_1308050 .adhere:nth-of-type(1n+1) { display: none; }
+        .bsap_1308050 .adhere:nth-of-type(1) { display: block; }
+      </style>
+    <!-- no ad -->
+      
+      <script type="text/javascript" id="auto_2" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(1308050); </script>
+    </div></div>
+</div>
+
+
+<!-- sidebar topics --><div class="sidebar-topics sidebar-link-header" style="margin-top:40px;"><h3><a href="https://davidwalsh.name/topics">Popular Topics<i class="fa fa-arrow-circle-o-right"></i></a></h3><ul><li><a href="https://davidwalsh.name/tutorials/htaccess">.htaccess</a></li><li><a href="https://davidwalsh.name/tutorials/ajax">AJAX</a></li><li><a href="https://davidwalsh.name/tutorials/canvas">Canvas&nbsp;&amp;&nbsp;SVG</a></li><li><a href="https://davidwalsh.name/tutorials/css">CSS</a></li><li><a href="https://davidwalsh.name/tutorials/dojo">Dojo</a></li><li><a href="https://davidwalsh.name/tutorials/firefoxos">Firefox OS</a></li><li><a href="https://davidwalsh.name/tutorials/html5">HTML5</a></li><li><a href="https://davidwalsh.name/tutorials/javascript">JavaScript</a></li><li><a href="https://davidwalsh.name/tutorials/jquery">jQuery</a></li><li><a href="https://davidwalsh.name/tutorials/media">Media</a></li><li><a href="https://davidwalsh.name/tutorials/mobile">Mobile</a></li><li><a href="https://davidwalsh.name/tutorials/mootools">MooTools</a></li><li><a href="https://davidwalsh.name/tutorials/nodejs">Node.js</a></li><li><a href="https://davidwalsh.name/tutorials/performance">Performance</a></li><li><a href="https://davidwalsh.name/tutorials/php">PHP</a></li><li><a href="https://davidwalsh.name/tutorials/seo">SEO</a></li><li><a href="https://davidwalsh.name/tutorials/shell">Shell</a></li><li><a href="https://davidwalsh.name/tutorials/wordpress">WordPress</a></li></ul></div>
+
+<div class="sidebar-sda-large clear" style="max-width: none;">
+    <a href="http://dwf.tw/coinbase" rel="nofollow"><img src="Create%20Zip%20Files%20with%20JavaScript_files/coinbase-sidebar.jpg" alt="Coinbase"></a>
+</div>
+
+<!-- last ad --><div class="sidebar-sda-large clear"><div class="bsa" data-bsa="1297632|db3b221ddd8cbba67739ae3837520ffe"><div id="bsap_1297632" class="bsap bsap_1297632" data-serve="CV7DLKY">
+      <style type="text/css">
+        
+          div.bsap_1297632{width:100%;display:block;}div.bsap_1297632 a{width:300px;}div.bsap_1297632 a img{padding:0;}div.bsap_1297632 a em{font-style:normal;}div.bsap_1297632 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;float:left;}
+div.bsap_1297632 img{border:0;clear:right;}
+div.bsap_1297632 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}
+div.bsap_1297632 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}
+div.bsap_1297632 iframe{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;float:left;}div.bsap_1297632 a{line-height:100%;}div.bsap_1297632 a.adhere{width:300px;height:250px;line-height:2000%;}html>body div.bsap_1297632 a.adhere{width:298px;height:248px;}div.bsap_1297632 img.s{height:0;width:0;}
+        
+        .bsap_1297632 .ads-via { display: block; }
+        .bsap_1297632 .adhere:nth-of-type(3n+1) { display: none; }
+        .bsap_1297632 .adhere:nth-of-type(1) { display: block; }
+      </style>
+    <!-- no ad --><!-- no ad --><!-- no ad -->
+      
+      <script type="text/javascript" id="auto_3" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(1297632); </script>
+    </div></div></div>
+
+<!-- sidebar features --><div class="sidebar-lists sidebar-features sidebar-link-header"><h3><a href="https://davidwalsh.name/tutorials/features">Popular Features<i class="fa fa-arrow-circle-o-right"></i></a></h3><ul><li><a href="https://davidwalsh.name/leaving-mozilla">39 Shirts - Leaving&nbsp;Mozilla</a></li><li><a href="https://davidwalsh.name/bitcoin-tips">Tips for Starting with Bitcoin and&nbsp;Cryptocurrencies</a></li><li><a href="https://davidwalsh.name/pornhub-interview">Interview with a Pornhub Web&nbsp;Developer</a></li><li><a href="https://davidwalsh.name/new-office">Welcome to My New&nbsp;Office</a></li><li><a href="https://davidwalsh.name/retropie-graphical-guide">How to Create a RetroPie on Raspberry Pi - Graphical&nbsp;Guide</a></li><li><a href="https://davidwalsh.name/conquering-impostor-syndrome">Conquering Impostor&nbsp;Syndrome</a></li><li><a href="https://davidwalsh.name/being-a-dev-dad">Being a Dev&nbsp;Dad</a></li></ul></div>
+
+<!-- sidebar ads --> <div class="sidebar-sda"><div class="bsa" data-bsa="1284071|db3b221ddd8cbba67739ae3837520ffe"><div id="bsap_1284071" class="bsap bsap_1284071" data-serve="CV7DLKE">
+      <style type="text/css">
+        
+          div.bsap_1284071{width:100%;display:block;}div.bsap_1284071 a{width:180px;}div.bsap_1284071 a img{padding:0;}div.bsap_1284071 a em{font-style:normal;}div.bsap_1284071 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;float:left;float:none;}
+div.bsap_1284071 img{border:0;clear:right;margin:0;}
+div.bsap_1284071 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}
+div.bsap_1284071 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}
+div.bsap_1284071 iframe{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0;text-align:center;text-decoration:none;overflow:hidden;float:left;float:none;}div.bsap_1284071 a{line-height:100%;}div.bsap_1284071 a.adhere{width:180px;height:150px;line-height:1200%;}html>body div.bsap_1284071 a.adhere{width:178px;height:148px;}div.bsap_1284071 img.s{height:0;width:0;}
+        
+        .bsap_1284071 .ads-via { display: block; }
+        .bsap_1284071 .adhere:nth-of-type(8n+1) { display: none; }
+        .bsap_1284071 .adhere:nth-of-type(1) { display: block; }
+      </style>
+    
+      <a href="https://srv.buysellads.com/ads/click/x/GTND42JECVSIEK7WCYY4YKQNCT7I45QMCTAICZ3JCYYDCKQMCE7D6KJKFTYDLKJUF67I6K7JCVAIV2Q7CY7IT2QKC6SDTKJUFTYI6K3EHJNCLSIZ" class="ad0 odd " title="Programming Assignment Help" id="bsa_413893" target="_blank" rel="nofollow">
+        <img src="Create%20Zip%20Files%20with%20JavaScript_files/eeb0800a8969bd7681c43bcbf613d931-1550159020.jpeg" alt="Programming Assignment Help" width="180" height="150">
+      </a>
+    
+<script type="text/javascript" id="auto_4" class="ignoreme">if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(413893, 'CV7DLKE', '');</script><!-- no ad --><!-- no ad --><!-- no ad --><!-- no ad --><!-- no ad --><!-- no ad --><!-- no ad -->
+      
+        <a href="http://davidwalsh-name.bsa-whitelabel.com/checkout/new/?utm_source=sidebar-advert&amp;utm_medium=ad_via_link&amp;utm_campaign=in_unit&amp;utm_term=" class="ads-via adhere">Advertise Here</a>
+      
+      <script type="text/javascript" id="auto_5" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(1284071); </script>
+    </div></div></div>
+
+<!-- sidebar demos --><div class="sidebar-lists sidebar-demos sidebar-link-header"><h3><a href="https://davidwalsh.name/tutorials/demos">Popular Demos<i class="fa fa-arrow-circle-o-right"></i></a></h3><ul><li><a href="https://davidwalsh.name/chris-coyiers-favorite-codepen-demos-iv">Chris Coyier’s Favorite CodePen Demos&nbsp;IV</a></li><li><a href="https://davidwalsh.name/prefers-color-scheme">prefers-color-scheme: CSS Media&nbsp;Query</a></li><li><a href="https://davidwalsh.name/css-ellipsis-left">CSS Ellipsis Beginning of&nbsp;String</a></li><li><a href="https://davidwalsh.name/vertical-center-flexbox">Vertically Centering with&nbsp;Flexbox</a></li><li><a href="https://davidwalsh.name/flexbox-spacer">Creating Spacers with&nbsp;Flexbox</a></li></ul></div><!-- last ad --><div class="sidebar-sda-small clear"><div class="bsa" data-bsa="1302215|db3b221ddd8cbba67739ae3837520ffe"><div id="bsap_1302215" class="bsap bsap_1302215" data-serve="C6YIEK77">
+      <style type="text/css">
+        
+          div.bsap_1302215{width:100%;display:block;}div.bsap_1302215 a{width:468px;}div.bsap_1302215 a img{padding:0;}div.bsap_1302215 a em{font-style:normal;}div.bsap_1302215 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0 4px 10px 0;text-align:center;text-decoration:none;overflow:hidden;float:left;}
+div.bsap_1302215 img{border:0;clear:right;}
+div.bsap_1302215 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}
+div.bsap_1302215 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}
+div.bsap_1302215 iframe{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0 4px 10px 0;text-align:center;text-decoration:none;overflow:hidden;float:left;}div.bsap_1302215 a{line-height:100%;}div.bsap_1302215 a.adhere{width:468px;height:60px;line-height:480%;}html>body div.bsap_1302215 a.adhere{width:466px;height:58px;}div.bsap_1302215 img.s{height:0;width:0;}
+        
+        .bsap_1302215 .ads-via { display: block; }
+        .bsap_1302215 .adhere:nth-of-type(2n+1) { display: none; }
+        .bsap_1302215 .adhere:nth-of-type(1) { display: block; }
+      </style>
+    <!-- no ad --><!-- no ad -->
+      
+      <script type="text/javascript" id="auto_6" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(1302215); </script>
+    </div></div></div></div></div></div><!-- site footer --><footer><div class="center"><div class="social"><ul class="social-icons"><li><a href="https://davidwalsh.name/feed" data-noxhr="true" class="rss"><i class="fa fa-rss" aria-hidden="true"></i></a></li><li><a href="https://twitter.com/davidwalshblog" rel="nofollow" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><li><a href="https://facebook.com/davidwalshblog" rel="nofollow" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><li><a href="https://plus.google.com/114538814489633467974?rel=author" rel="nofollow" class="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li><li><a href="https://github.com/darkwing" rel="nofollow" class="github"><i class="fa fa-github" aria-hidden="true"></i></a></li><li><a href="https://linkedin.com/in/davidjameswalsh" rel="nofollow" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li></ul></div><p><span>© David Walsh 2007-2020.  All code <a href="http://opensource.org/licenses/MIT" rel="nofollow">MIT license</a>.</span><span>Hosting by <a href="http://dwf.tw/mt" rel="nofollow">Media Temple</a>.</span></p></div></footer><!-- scripts --><script src="Create%20Zip%20Files%20with%20JavaScript_files/curl.js" onload="curl(z,['main'])" async=""></script><script>!function(e){var t=e.createElement("link"),s="setAttribute";t[s]("type","text/css"),t[s]("rel","stylesheet"),t[s]("href","//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"),e.body.appendChild(t)}(z.d);!function(e){var t=e.documentElement,n="fonts-loaded";if(-1==t.className.indexOf(n)){var s=e.createElement("link"),a="setAttribute";s.onload=function(){t.className+=" "+n},s[a]("type","text/css"),s[a]("rel","stylesheet"),s[a]("href",z.themePath+"/fonts.css"),e.body.appendChild(s)}}(z.d);</script><link type="text/css" rel="stylesheet" href="Create%20Zip%20Files%20with%20JavaScript_files/font-awesome.css"><link type="text/css" rel="stylesheet" href="Create%20Zip%20Files%20with%20JavaScript_files/fonts.css"><link rel="stylesheet" id="prompt-comment-form-css" href="Create%20Zip%20Files%20with%20JavaScript_files/comment-form.css" type="text/css" media="all">
+<script type="text/javascript" src="Create%20Zip%20Files%20with%20JavaScript_files/wp-embed.js"></script>
+<script type="text/javascript" src="Create%20Zip%20Files%20with%20JavaScript_files/jquery.js"></script>
+<script type="text/javascript" src="Create%20Zip%20Files%20with%20JavaScript_files/jquery-migrate.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var prompt_comment_form_env = {"url":"https:\/\/davidwalsh.name\/wp-admin\/admin-ajax.php","nonce":"f722faabeb","action":"prompt_comment_unsubscribe","post_id":"26213"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="Create%20Zip%20Files%20with%20JavaScript_files/comment-form.js"></script>
+<script type="text/javascript">
+adroll_adv_id = "ZMY7MBBFIFDUBAVNOE7XUJ";
+adroll_pix_id = "JPUOHWQVQZBGBBTRCVCUVP";
+/* OPTIONAL: provide email to improve user identification */
+/* adroll_email = "username@example.com"; */
+/*
+(function () {
+var _onload = function(){
+if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+if (!window.__adroll_loaded) {__adroll_loaded=true;setTimeout(_onload, 50);return}
+var scr = document.createElement("script");
+var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+scr.setAttribute('async', 'true');
+scr.type = "text/javascript";
+scr.src = host + "/j/roundtrip.js";
+((document.getElementsByTagName('head') || [null])[0] ||
+document.getElementsByTagName('script')
+[0].parentNode).appendChild(scr);
+};
+if (window.addEventListener) {window.addEventListener('load', _onload, false);} else {window.attachEvent('onload', _onload)}
+}());
+*/
+</script>
+
+
+<script>
+    try {
+    fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+        return true;
+    }).catch(function(e) {
+        var carbonScript = document.createElement("script");
+        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7D627U&placement=davidwalshname";
+        carbonScript.id = "_carbonads_js";
+        document.getElementById("carbon-block").appendChild(carbonScript);
+    });
+    } catch (error) {
+    console.log(error);
+    }
+    </script>
+
+    <style type="text/css">
+        #carbonads {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        #carbonads {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        }
+
+        #carbonads > span {
+        position: relative;
+        display: block;
+        }
+
+        #carbonads a {
+        color: inherit;
+        text-decoration: none;
+        }
+
+        #carbonads a:hover {
+        color: inherit;
+        }
+
+        .carbon-wrap {
+        display: flex;
+        align-items: center;
+        
+        }
+
+        .carbon-img {
+        display: block;
+        margin: 0;
+        line-height: 1;
+        }
+
+        .carbon-img img {
+        display: block;
+        }
+
+        .carbon-text {
+        display: flex;
+        margin-bottom: 12px;
+        position: relative;
+        max-width: 500px;
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 8px 1em;
+        text-align: left;
+        align-items: center;
+        }
+
+        .carbon-text:after {
+        display: table;
+        content: 'Learn More';
+        white-space: nowrap;
+        margin-left: 20px;
+        background-color: hsl(0, 0%, 20%);
+        padding: 12px 16px;
+        border-radius: 3px;
+        line-height: 1;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        }
+
+        .carbon-poweredby {
+        position: absolute;
+        bottom: 0;
+        left: 146px;
+        white-space: nowrap;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        font-weight: 500;
+        color: #999 !important;
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 759px) {
+        .carbon-text:after {
+            display: none;
+        }   
+        }
+    </style>
+<script async="" src="Create%20Zip%20Files%20with%20JavaScript_files/rm.js" data-rm-token="h3rc6sv:h5ew6pw"></script>
+
+
+<div class="device-state offscreen"></div></body></html>
